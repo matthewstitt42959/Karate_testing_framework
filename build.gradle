@@ -1,8 +1,6 @@
 plugins {
     id 'java'
-}
-ext {
-    karateVersion = '1.0.0'
+    id 'war'
 }
 
 group 'com.karate'
@@ -13,13 +11,24 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-    // https://mvnrepository.com/artifact/com.intuit.karate/karate-core
-    implementation group: 'com.intuit.karate', name: 'karate-core', version: '1.2.0'
-    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+
+    // https://mvnrepository.com/artifact/com.datastax.oss/java-driver-core
+    implementation group: 'com.datastax.oss', name: 'java-driver-core', version: '4.15.0'
+
+
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5
+    implementation group: 'org.apache.httpcomponents.client5', name: 'httpclient5', version: '5.2'
+// https://mvnrepository.com/artifact/org.springframework.data/spring-data-commons
+    implementation group: 'org.springframework.data', name: 'spring-data-cassandra', version: '3.4.3'
+// https://mvnrepository.com/artifact/org.springframework/spring-core
+    implementation group: 'org.springframework', name: 'spring-core', version: '2.5.6'
+
 }
 
 test {
     useJUnitPlatform()
+
 }
