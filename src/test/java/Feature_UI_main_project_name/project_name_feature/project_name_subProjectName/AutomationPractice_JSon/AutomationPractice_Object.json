@@ -1,0 +1,8 @@
+{
+  "Locator": {
+    "section_of_Buttons_header": "//span[@id='Section_of_Buttons']",
+    "section_of_Buttons_column1_button1": "//div@class='et_pb_row et_pb_row_2 et_pb_row_4col']/div[1]/div[1]"
+
+  }
+
+}
