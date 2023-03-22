@@ -10,8 +10,8 @@ Feature: GET_DemoQA_BookStore
     Scenario Outline: Validate Get
       Given url <baseURL>
       * path <path>
+      * param isbn = <param>
       And header Authorization = 'Bearer ' + authToken
-      #* param
       * method get
       Then status 200
 
@@ -19,25 +19,25 @@ Feature: GET_DemoQA_BookStore
       #Given def res = get response
       #Valiate that the ISBN exists in the A"PI call
     #  * def myResponse = $.books[*].isbn
-    #  * def res = karate.jsonPath(response, "$.books[?(@.isbn== '" + <testData>.Data.ISBN + "')]")[0]
-      * def filt = function(x){return x.id == <testData>.id}
-      * def myResponse = $[*]
-      * def res = karate.filter(myResponse, filt)
+      * def res = karate.jsonPath(response, "$.books[?(@.isbn== '" + <testData>.Data.ISBN + "')]")[0]
+    #  * def filt = function(x){return x.id == <testData>.isbn}
+    #  * def myResponse = $[*]
+    #  * def res = karate.filter(myResponse, filt)
+    * print res
 
-      * print res
-      * def ISBN = res[0].isbn
+      * def ISBN = res.isbn
       * print ISBN
-      * def TITLE = res[0].title
+      * def TITLE = res.title
       * print TITLE
-      * def SUBTITLE = res[0].subTitle
+      * def SUBTITLE = res.subTitle
       * print SUBTITLE
-      * def AUTHOR = res[0].author
-      * def PUBLISH_DATE = res[0].publish_data
-      * def PUBLISHER = res[0].publisher
-      * def PAGES = res[0].pages
-      * def DESCRIPTION = res[0].description
-      * def WEBSITE = res[0].website
+      * def AUTHOR = res.author
+      * def PUBLISH_DATE = res.publish_data
+      * def PUBLISHER = res.publisher
+      * def PAGES = res.pages
+      * def DESCRIPTION = res.description
+      * def WEBSITE = res.website
 
       Examples:
-      |testData             |baseURL                           |path      |
-      |DemoQAHomePageJSON   |'https://demoqa.com/BookStore/v1'   |'Books'    |
+      |testData             |baseURL                           |path      | param                |
+      |DemoQAHomePageJSON   |'https://demoqa.com/BookStore/v1'   |'Books'    |'9781491950296'    |
