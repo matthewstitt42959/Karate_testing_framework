@@ -21,8 +21,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.identify("f9330fa1-70e9-4821-8061-011a0c2a7992",{name:"mstitt"});
-    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:"intellij:1.6.0.214"});
+    posthog.identify("c593cf34-63b3-499b-bf46-0a8f6506e31e",{name:"mstitt"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:"intellij:1.7.4.325"});
   }
 });
 </script>
@@ -50,7 +50,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2023-03-22 04:25:57 PM</div>
+    <div>2023-05-16 09:50:35 AM</div>
   </div>
 </div>
 
@@ -85,7 +85,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>14187</span>
+              <span>ms:</span>&nbsp;<span>177</span>
             </div>
           </div>
           <div class="step-row">
@@ -108,7 +108,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>configure driver = {type:&#39;chrome&#39;, addOptions:  [&#39;--remote-allow-origins=*&#39;, &#39;--incognito&#39; ], userDataDir: &#39;target/chrome-user-dir&#39;}</span>
       </div>
     </div>
-    <div class="time-cell passed">34</div>
+    <div class="time-cell passed">33</div>
   </div>
 
    
@@ -117,8 +117,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.3">16:25:29.381 karate.envData system property was: null 
-</div>   
+     
 
   
 
@@ -137,7 +136,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def DemoQAHomePageJSON = read(&#39;HomePage_JSon/DemoQA_HomePage_Object.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">109</div>
   </div>
 
    
@@ -161,11 +160,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="1.5">
       <div class="step-ref bg-step">5</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>*</span>&nbsp;<span>def fromAPI = call read(&#39;../DemoQA_API_DB/Get_DemoQA_BookStore.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1264</div>
+    <div class="time-cell failed">34</div>
   </div>
 
    
@@ -174,7 +173,19 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="1.5">09:50:35.822 src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:5
+* def fromAPI = call read(&#39;../DemoQA_API_DB/Get_DemoQA_BookStore.feature&#39;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: API_ID
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;API_ID&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/DemoQA/DemoQA_HomePage/../DemoQA_Authenticate/DemoQA_Authenticate.feature:21
+src/test/java/DemoQA/DemoQA_HomePage/../DemoQA_API_DB/Get_DemoQA_BookStore.feature:6
+src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:5
+</div>   
 
   <div>
         
@@ -184,7 +195,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">src.test.java.DemoQA.DemoQA_HomePage.DemoQA_API_DB.Get_DemoQA_BookStore</div>
       </div>
-      <div class="time-cell passed">1250</div>
+      <div class="time-cell passed">25</div>
     </div>
     <div>
       <div><div>
@@ -238,11 +249,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="1.5.0.call.1.6">
       <div class="step-ref bg-step">6</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>*</span>&nbsp;<span>def myFeature = call read(&#39;../DemoQA_Authenticate/DemoQA_Authenticate.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">785</div>
+    <div class="time-cell failed">24</div>
   </div>
 
    
@@ -251,7 +262,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="1.5.0.call.1.6">09:50:35.822 src/test/java/DemoQA/DemoQA_HomePage/../DemoQA_API_DB/Get_DemoQA_BookStore.feature:6
+* def myFeature = call read(&#39;../DemoQA_Authenticate/DemoQA_Authenticate.feature&#39;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: API_ID
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;API_ID&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/DemoQA/DemoQA_HomePage/../DemoQA_Authenticate/DemoQA_Authenticate.feature:21
+src/test/java/DemoQA/DemoQA_HomePage/../DemoQA_API_DB/Get_DemoQA_BookStore.feature:6
+</div>   
 
   <div>
         
@@ -262,7 +284,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">src.test.java.DemoQA.DemoQA_HomePage.DemoQA_Authenticate.DemoQA_Authenticate</div>
       </div>
-      <div class="time-cell passed">776</div>
+      <div class="time-cell passed">17</div>
     </div>
     <div>
       <div><div>
@@ -316,7 +338,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>def basicAuthFunction =</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -404,11 +426,11 @@ return &#39;Basic &#39; + encoded;
       <div class="step-ref bg-step">21</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>And</span>&nbsp;<span>def username = API_ID</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell failed">6</div>
   </div>
 
    
@@ -417,7 +439,17 @@ return &#39;Basic &#39; + encoded;
 
   
 
-     
+  <div class="preformatted" data-parent="1.5.0.call.1.6.0.call.1.21">09:50:35.821 src/test/java/DemoQA/DemoQA_HomePage/../DemoQA_Authenticate/DemoQA_Authenticate.feature:21
+And def username = API_ID
+js failed:
+&gt;&gt;&gt;&gt;
+01: API_ID
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;API_ID&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/DemoQA/DemoQA_HomePage/../DemoQA_Authenticate/DemoQA_Authenticate.feature:21
+</div>   
 
   
 
@@ -433,11 +465,11 @@ return &#39;Basic &#39; + encoded;
       <div class="step-ref bg-step">22</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>def password = API_SECRET</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -462,11 +494,11 @@ return &#39;Basic &#39; + encoded;
       <div class="step-ref bg-step">23</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = basicAuthFunction(username, password)</span>
       </div>
     </div>
-    <div class="time-cell passed">15</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -491,11 +523,11 @@ return &#39;Basic &#39; + encoded;
       <div class="step-ref bg-step">24</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">749</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -504,30 +536,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="1.5.0.call.1.6.0.call.1.24">16:25:29.710 request:
-1 &gt; GET https://demoqa.com/Account/v1/GenerateToken
-1 &gt; Content-Type: application/json
-1 &gt; Authorization: Basic TWF0dGhldy5TdGl0dDpAUGFzc3cwcmQ=
-1 &gt; Host: demoqa.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-16:25:30.245 response time in milliseconds: 532
-1 &lt; 200
-1 &lt; Server: nginx/1.17.10 (Ubuntu)
-1 &lt; Date: Wed, 22 Mar 2023 20:25:30 GMT
-1 &lt; Content-Type: text/html; charset=UTF-8
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; X-Powered-By: Express
-1 &lt; Cache-Control: public, max-age=0
-1 &lt; Last-Modified: Tue, 07 Feb 2023 21:37:23 GMT
-1 &lt; ETag: W/&quot;c26-1862dcfdf2f&quot;
-&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;&lt;script src=&quot;https://code.jquery.com/jquery-3.5.0.min.js&quot; integrity=&quot;sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;&lt;script src=&quot;https://code.jquery.com/ui/1.12.0/jquery-ui.min.js&quot; integrity=&quot;sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;&lt;link href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;script async&gt;async function detectAdBlock(){let e=!1;try{await fetch(new Request(&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;)).catch(t=&gt;e=!0)}catch(t){e=!1}finally{!0===e&amp;&amp;dataLayer.push({event:&quot;Ad Blocker&quot;}),console.log(&quot;AdBlock Enabled: &quot;+e)}}detectAdBlock()&lt;/script&gt;&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5889298451609146&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;&lt;title&gt;DEMOQA&lt;/title&gt;&lt;div id=&quot;fixedban&quot; style=&quot;width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999&quot;&gt;&lt;div style=&quot;text-align:center;display:block;max-width:970px;height:auto;overflow:hidden;margin:auto&quot;&gt;&lt;script async=&quot;async&quot; src=&quot;https://www.googletagservices.com/tag/js/gpt.js&quot;&gt;&lt;/script&gt;&lt;script&gt;var gptadslots=[],googletag=googletag||{cmd:[]}&lt;/script&gt;&lt;script&gt;googletag.cmd.push((function(){var e=googletag.sizeMapping().addSize([0,0],[[320,50],[300,75],[300,50]]).addSize([730,200],[[728,90],[468,60]]).addSize([975,200],[[970,90],[728,90],[960,90],[750,100],[950,90],[468,60]]).build();gptadslots.push(googletag.defineSlot(&quot;/21849154601,22343295815/Ad.Plus-Anchor&quot;,[[320,100]],&quot;adplus-anchor&quot;).setTargeting(&quot;site&quot;,[&quot;demoqa.com&quot;]).defineSizeMapping(e).addService(googletag.pubads())),googletag.enableServices()}))&lt;/script&gt;&lt;div&gt;&lt;a id=&quot;close-fixedban&quot; onclick=&#39;document.getElementById(&quot;fixedban&amp;apos&quot;).style.display=&quot;none&amp;apos&quot;&#39; style=&quot;cursor:pointer&quot;&gt;&lt;img src=&quot;https://ad.plus/adplus-advertising.svg&quot; alt=&quot;adplus-dvertising&quot; title=&quot;Ad.Plus Advertising&quot; style=&quot;vertical-align:middle&quot;/&gt;&lt;/a&gt;&lt;/div&gt;&lt;div id=&quot;adplus-anchor&quot;&gt;&lt;script&gt;googletag.cmd.push((function(){googletag.display(&quot;adplus-anchor&quot;)}))&lt;/script&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({&quot;gtm.start&quot;:(new Date).getTime(),event:&quot;gtm.js&quot;});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src=&quot;https://www.googletagmanager.com/gtm.js?id=GTM-MX8DD4S&quot;,m.parentNode.insertBefore(r,m)}(window,document,&quot;script&quot;,&quot;dataLayer&quot;)&lt;/script&gt;&lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.png&quot;&gt;&lt;link href=&quot;/main.css&quot; rel=&quot;stylesheet&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;&lt;iframe src=&quot;https://www.googletagmanager.com/ns.html?id=GTM-MX8DD4S&quot; height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;&lt;div id=&quot;app&quot;&gt;&lt;/div&gt;&lt;script src=&quot;https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit&quot; async defer=&quot;defer&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/bundle.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;
-
-</div>   
+     
 
   
 
@@ -543,11 +552,11 @@ return &#39;Basic &#39; + encoded;
       <div class="step-ref bg-step">25</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -572,11 +581,11 @@ return &#39;Basic &#39; + encoded;
       <div class="step-ref bg-step">26</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def AUTHTOKEN = response.token</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -605,11 +614,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.7">
       <div class="step-ref bg-step">7</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def authToken = myFeature.AUTHTOKEN</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -633,11 +642,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.8">
       <div class="step-ref bg-step">8</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def DemoQAHomePageJSON = read(&#39;../DemoQA_Homepage/HomePage_JSon/DemoQA_HomePage_Object.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -661,11 +670,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.11">
       <div class="step-ref bg-step">11</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>url &#39;https://demoqa.com/BookStore/v1&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -689,11 +698,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.12">
       <div class="step-ref bg-step">12</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>path &#39;Books&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -717,11 +726,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.13">
       <div class="step-ref bg-step">13</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>param isbn = &#39;9781491950296&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -745,11 +754,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.14">
       <div class="step-ref bg-step">14</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -773,11 +782,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.15">
       <div class="step-ref bg-step">15</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">405</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -786,28 +795,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="1.5.0.call.1.15">16:25:30.261 request:
-1 &gt; GET https://demoqa.com/BookStore/v1/Books?isbn=9781491950296
-1 &gt; Content-Type: application/json
-1 &gt; Authorization: Bearer null
-1 &gt; Host: demoqa.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-16:25:30.657 response time in milliseconds: 393
-1 &lt; 200
-1 &lt; Server: nginx/1.17.10 (Ubuntu)
-1 &lt; Date: Wed, 22 Mar 2023 20:25:30 GMT
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 4514
-1 &lt; Connection: keep-alive
-1 &lt; X-Powered-By: Express
-1 &lt; ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;
-{&quot;books&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;,&quot;title&quot;:&quot;Git Pocket Guide&quot;,&quot;subTitle&quot;:&quot;A Working Introduction&quot;,&quot;author&quot;:&quot;Richard E. Silverman&quot;,&quot;publish_date&quot;:&quot;2020-06-04T08:48:39.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:234,&quot;description&quot;:&quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;},{&quot;isbn&quot;:&quot;9781449331818&quot;,&quot;title&quot;:&quot;Learning JavaScript Design Patterns&quot;,&quot;subTitle&quot;:&quot;A JavaScript and jQuery Developer&#39;s Guide&quot;,&quot;author&quot;:&quot;Addy Osmani&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:11:40.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;With Learning JavaScript Design Patterns, you&#39;ll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da&quot;,&quot;website&quot;:&quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot;},{&quot;isbn&quot;:&quot;9781449337711&quot;,&quot;title&quot;:&quot;Designing Evolvable Web APIs with ASP.NET&quot;,&quot;subTitle&quot;:&quot;Harnessing the Power of the Web&quot;,&quot;author&quot;:&quot;Glenn Block et al.&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:12:43.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:238,&quot;description&quot;:&quot;Design and build Web APIs for a broad range of clients—including browsers and mobile devices—that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;},{&quot;isbn&quot;:&quot;9781449365035&quot;,&quot;title&quot;:&quot;Speaking JavaScript&quot;,&quot;subTitle&quot;:&quot;An In-Depth Guide for Programmers&quot;,&quot;author&quot;:&quot;Axel Rauschmayer&quot;,&quot;publish_date&quot;:&quot;2014-02-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:460,&quot;description&quot;:&quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,&quot;website&quot;:&quot;http://speakingjs.com/&quot;},{&quot;isbn&quot;:&quot;9781491904244&quot;,&quot;title&quot;:&quot;You Don&#39;t Know JS&quot;,&quot;subTitle&quot;:&quot;ES6 &amp; Beyond&quot;,&quot;author&quot;:&quot;Kyle Simpson&quot;,&quot;publish_date&quot;:&quot;2015-12-27T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:278,&quot;description&quot;:&quot;No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \\\&quot;You Don’t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,&quot;website&quot;:&quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;},{&quot;isbn&quot;:&quot;9781491950296&quot;,&quot;title&quot;:&quot;Programming JavaScript Applications&quot;,&quot;subTitle&quot;:&quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,&quot;author&quot;:&quot;Eric Elliott&quot;,&quot;publish_date&quot;:&quot;2014-07-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;Take advantage of JavaScript&#39;s power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;},{&quot;isbn&quot;:&quot;9781593275846&quot;,&quot;title&quot;:&quot;Eloquent JavaScript, Second Edition&quot;,&quot;subTitle&quot;:&quot;A Modern Introduction to Programming&quot;,&quot;author&quot;:&quot;Marijn Haverbeke&quot;,&quot;publish_date&quot;:&quot;2014-12-14T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:472,&quot;description&quot;:&quot;JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale &quot;,&quot;website&quot;:&quot;http://eloquentjavascript.net/&quot;},{&quot;isbn&quot;:&quot;9781593277574&quot;,&quot;title&quot;:&quot;Understanding ECMAScript 6&quot;,&quot;subTitle&quot;:&quot;The Definitive Guide for JavaScript Developers&quot;,&quot;author&quot;:&quot;Nicholas C. Zakas&quot;,&quot;publish_date&quot;:&quot;2016-09-03T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:352,&quot;description&quot;:&quot;ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E&quot;,&quot;website&quot;:&quot;https://leanpub.com/understandinges6/read&quot;}]}
-
-</div>   
+     
 
   
 
@@ -822,11 +810,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.16">
       <div class="step-ref bg-step">16</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -884,11 +872,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.22">
       <div class="step-ref bg-step">22</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def res = karate.jsonPath(response, &quot;$.books[?(@.isbn== &#39;&quot; + DemoQAHomePageJSON.Data.ISBN + &quot;&#39;)]&quot;)[0]</span>
       </div>
     </div>
-    <div class="time-cell passed">39</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -937,11 +925,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.26">
       <div class="step-ref bg-step">26</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print res</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -950,19 +938,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="1.5.0.call.1.26">16:25:30.708 [print] {
-  &quot;isbn&quot;: &quot;9781491950296&quot;,
-  &quot;title&quot;: &quot;Programming JavaScript Applications&quot;,
-  &quot;subTitle&quot;: &quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,
-  &quot;author&quot;: &quot;Eric Elliott&quot;,
-  &quot;publish_date&quot;: &quot;2014-07-01T00:00:00.000Z&quot;,
-  &quot;publisher&quot;: &quot;O&#39;Reilly Media&quot;,
-  &quot;pages&quot;: 254,
-  &quot;description&quot;: &quot;Take advantage of JavaScript&#39;s power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,
-  &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;
-}
- 
-</div>   
+     
 
   
 
@@ -977,11 +953,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.28">
       <div class="step-ref bg-step">28</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def ISBN = res.isbn</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1005,11 +981,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.29">
       <div class="step-ref bg-step">29</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print ISBN</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1018,8 +994,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="1.5.0.call.1.29">16:25:30.709 [print] 9781491950296 
-</div>   
+     
 
   
 
@@ -1034,11 +1009,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.30">
       <div class="step-ref bg-step">30</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def TITLE = res.title</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1062,11 +1037,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.31">
       <div class="step-ref bg-step">31</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print TITLE</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1075,8 +1050,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="1.5.0.call.1.31">16:25:30.710 [print] Programming JavaScript Applications 
-</div>   
+     
 
   
 
@@ -1091,11 +1065,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.32">
       <div class="step-ref bg-step">32</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def SUBTITLE = res.subTitle</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1119,11 +1093,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.33">
       <div class="step-ref bg-step">33</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print SUBTITLE</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1132,8 +1106,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="1.5.0.call.1.33">16:25:30.711 [print] Robust Web Architecture with Node, HTML5, and Modern JS Libraries 
-</div>   
+     
 
   
 
@@ -1148,11 +1121,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.34">
       <div class="step-ref bg-step">34</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def AUTHOR = res.author</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1176,11 +1149,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.35">
       <div class="step-ref bg-step">35</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def PUBLISH_DATE = res.publish_data</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1204,11 +1177,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.36">
       <div class="step-ref bg-step">36</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def PUBLISHER = res.publisher</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1232,11 +1205,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.37">
       <div class="step-ref bg-step">37</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def PAGES = res.pages</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1260,11 +1233,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.38">
       <div class="step-ref bg-step">38</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def DESCRIPTION = res.description</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1288,11 +1261,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.5.0.call.1.39">
       <div class="step-ref bg-step">39</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def WEBSITE = res.website</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1328,11 +1301,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.8">
       <div class="step-ref bg-step">8</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Isbn = fromAPI.ISBN</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1356,11 +1329,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.9">
       <div class="step-ref bg-step">9</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print Api_Isbn</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1369,8 +1342,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="1.9">16:25:30.720 [print] 9781491950296 
-</div>   
+     
 
   
 
@@ -1385,11 +1357,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.10">
       <div class="step-ref bg-step">10</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Title = fromAPI.TITLE</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1413,11 +1385,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.11">
       <div class="step-ref bg-step">11</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Subtitle = fromAPI.SUBTITLE</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1441,11 +1413,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.12">
       <div class="step-ref bg-step">12</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Author = fromAPI.AUTHOR</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1469,11 +1441,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.13">
       <div class="step-ref bg-step">13</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Publish_date = fromAPI.PUBLISH_DATE</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1497,11 +1469,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.14">
       <div class="step-ref bg-step">14</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Publisher = fromAPI.PUBLISHER</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1525,11 +1497,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.15">
       <div class="step-ref bg-step">15</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Pages = fromAPI.PAGES</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1553,11 +1525,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.16">
       <div class="step-ref bg-step">16</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Description = fromAPI.DESCRIPTION</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1581,11 +1553,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="1.17">
       <div class="step-ref bg-step">17</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Website = fromAPI.WEBSITE</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1607,13 +1579,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="1.21">
-      <div class="step-ref passed">21</div>
+      <div class="step-ref skipped">21</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>driver DemoQAHomePageJSON.URL.demoqa_homePage_Login_URL</span>
       </div>
     </div>
-    <div class="time-cell passed">4171</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1635,13 +1607,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="1.22">
-      <div class="step-ref passed">22</div>
+      <div class="step-ref skipped">22</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>waitForUrl(DemoQAHomePageJSON.URL.demoqa_homePage_Login_URL)</span>
       </div>
     </div>
-    <div class="time-cell passed">16</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1663,13 +1635,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="1.23">
-      <div class="step-ref passed">23</div>
+      <div class="step-ref skipped">23</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>driver.fullscreen()</span>
       </div>
     </div>
-    <div class="time-cell passed">36</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1691,13 +1663,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="1.25">
-      <div class="step-ref passed">25</div>
+      <div class="step-ref skipped">25</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match text(DemoQAHomePageJSON.Locator.demoqa_bookStore_click) == &#39;Book Store Application&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">96</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1719,13 +1691,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="1.26">
-      <div class="step-ref passed">26</div>
+      <div class="step-ref skipped">26</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>click(DemoQAHomePageJSON.Locator.demoqa_bookStore_click)</span>
       </div>
     </div>
-    <div class="time-cell passed">155</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1754,13 +1726,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="1.29">
-      <div class="step-ref passed">29</div>
+      <div class="step-ref skipped">29</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>waitForText(DemoQAHomePageJSON.Locator.demoqa_sub_header_bookstore, &#39;Book Store&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">17</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1789,13 +1761,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="1.31">
-      <div class="step-ref passed">31</div>
+      <div class="step-ref skipped">31</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>click(DemoQAHomePageJSON.Locator.demoqa_search)</span>
       </div>
     </div>
-    <div class="time-cell passed">3019</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1817,13 +1789,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="1.32">
-      <div class="step-ref passed">32</div>
+      <div class="step-ref skipped">32</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>input(DemoQAHomePageJSON.Locator.demoqa_search, DemoQAHomePageJSON.Data.search1)</span>
       </div>
     </div>
-    <div class="time-cell passed">537</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1845,13 +1817,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="1.33">
-      <div class="step-ref passed">33</div>
+      <div class="step-ref skipped">33</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>delay(1000)</span>
       </div>
     </div>
-    <div class="time-cell passed">1016</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1880,13 +1852,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="1.35">
-      <div class="step-ref passed">35</div>
+      <div class="step-ref skipped">35</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>match text(DemoQAHomePageJSON.Locator.demoqa_search_book + DemoQAHomePageJSON.Data.search_id1 + &quot;&#39;]&quot; ) == DemoQAHomePageJSON.Data.bookName1</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1908,13 +1880,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="1.36">
-      <div class="step-ref passed">36</div>
+      <div class="step-ref skipped">36</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>click(DemoQAHomePageJSON.Locator.demoqa_search_book_click + DemoQAHomePageJSON.Data.bookName1 + &quot;&#39;]&quot; )</span>
       </div>
     </div>
-    <div class="time-cell passed">23</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1952,13 +1924,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="1.40">
-      <div class="step-ref passed">40</div>
+      <div class="step-ref skipped">40</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>match text(DemoQAHomePageJSON.Locator.demoqa_book_isbn_label).trim() == &#39;ISBN :&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3764</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1980,13 +1952,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="1.41">
-      <div class="step-ref passed">41</div>
+      <div class="step-ref skipped">41</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>match text(DemoQAHomePageJSON.Locator.demoqa_book_isbn_value) == Api_Isbn</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2008,13 +1980,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="1.42">
-      <div class="step-ref passed">42</div>
+      <div class="step-ref skipped">42</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>match text(DemoQAHomePageJSON.Locator.demoqa_book_title_label).trim() == &#39;Title :&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2036,13 +2008,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="1.43">
-      <div class="step-ref failed">43</div>
+      <div class="step-ref skipped">43</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>match text(DemoQAHomePageJSON.Locator.demoqa_book_title_value) == Api_Title</span>
       </div>
     </div>
-    <div class="time-cell failed">14</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2051,21 +2023,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="1.43">16:25:43.601 src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:43
-* match text(DemoQAHomePageJSON.Locator.demoqa_book_title_value) == Api_Title
-js failed:
-&gt;&gt;&gt;&gt;
-01: text(DemoQAHomePageJSON.Locator.demoqa_book_title_value)
-&lt;&lt;&lt;&lt;
-org.graalvm.polyglot.PolyglotException: Cannot invoke &quot;String.startsWith(String)&quot; because &quot;locator&quot; is null
-- com.intuit.karate.driver.DriverOptions.selector(DriverOptions.java:439)
-- com.intuit.karate.driver.DriverOptions.selector(DriverOptions.java:435)
-- com.intuit.karate.driver.DevToolsDriver.property(DevToolsDriver.java:754)
-- com.intuit.karate.driver.DevToolsDriver.text(DevToolsDriver.java:724)
-- &lt;js&gt;.:anonymous(Unnamed:1)
-
-src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:43
-</div>   
+     
 
   
 
@@ -2091,7 +2049,7 @@ src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:43
   
   
 
-  <div class="embed" data-parent="1.44"><img src="src.test.java.DemoQA.DemoQA_HomePage.DemoQA_bookstore_1_1_1679516743835.png"/></div>
+  
 
      
 
@@ -2421,7 +2379,7 @@ src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:43
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>13544</span>
+              <span>ms:</span>&nbsp;<span>12</span>
             </div>
           </div>
           <div class="step-row">
@@ -2444,7 +2402,7 @@ src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:43
         <span>*</span>&nbsp;<span>configure driver = {type:&#39;chrome&#39;, addOptions:  [&#39;--remote-allow-origins=*&#39;, &#39;--incognito&#39; ], userDataDir: &#39;target/chrome-user-dir&#39;}</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2453,8 +2411,7 @@ src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:43
 
   
 
-  <div class="preformatted" data-parent="2.3">16:25:43.874 karate.envData system property was: null 
-</div>   
+     
 
   
 
@@ -2473,7 +2430,7 @@ src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:43
         <span>*</span>&nbsp;<span>def DemoQAHomePageJSON = read(&#39;HomePage_JSon/DemoQA_HomePage_Object.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">26</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2497,11 +2454,11 @@ src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:43
     <div class="step-container" id="2.5">
       <div class="step-ref bg-step">5</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>*</span>&nbsp;<span>def fromAPI = call read(&#39;../DemoQA_API_DB/Get_DemoQA_BookStore.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">860</div>
+    <div class="time-cell failed">10</div>
   </div>
 
    
@@ -2510,7 +2467,19 @@ src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:43
 
   
 
-     
+  <div class="preformatted" data-parent="2.5">09:50:35.839 src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:5
+* def fromAPI = call read(&#39;../DemoQA_API_DB/Get_DemoQA_BookStore.feature&#39;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: API_ID
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;API_ID&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/DemoQA/DemoQA_HomePage/../DemoQA_Authenticate/DemoQA_Authenticate.feature:21
+src/test/java/DemoQA/DemoQA_HomePage/../DemoQA_API_DB/Get_DemoQA_BookStore.feature:6
+src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:5
+</div>   
 
   <div>
         
@@ -2520,7 +2489,7 @@ src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:43
         <div class="step-indent"></div>
         <div class="step-cell passed">src.test.java.DemoQA.DemoQA_HomePage.DemoQA_API_DB.Get_DemoQA_BookStore</div>
       </div>
-      <div class="time-cell passed">825</div>
+      <div class="time-cell passed">5</div>
     </div>
     <div>
       <div><div>
@@ -2543,7 +2512,7 @@ src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:43
         <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2574,11 +2543,11 @@ src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:43
     <div class="step-container" id="2.5.0.call.1.6">
       <div class="step-ref bg-step">6</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>*</span>&nbsp;<span>def myFeature = call read(&#39;../DemoQA_Authenticate/DemoQA_Authenticate.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">417</div>
+    <div class="time-cell failed">5</div>
   </div>
 
    
@@ -2587,7 +2556,18 @@ src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:43
 
   
 
-     
+  <div class="preformatted" data-parent="2.5.0.call.1.6">09:50:35.839 src/test/java/DemoQA/DemoQA_HomePage/../DemoQA_API_DB/Get_DemoQA_BookStore.feature:6
+* def myFeature = call read(&#39;../DemoQA_Authenticate/DemoQA_Authenticate.feature&#39;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: API_ID
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;API_ID&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/DemoQA/DemoQA_HomePage/../DemoQA_Authenticate/DemoQA_Authenticate.feature:21
+src/test/java/DemoQA/DemoQA_HomePage/../DemoQA_API_DB/Get_DemoQA_BookStore.feature:6
+</div>   
 
   <div>
         
@@ -2598,7 +2578,7 @@ src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:43
         <div class="step-indent"></div>
         <div class="step-cell passed">src.test.java.DemoQA.DemoQA_HomePage.DemoQA_Authenticate.DemoQA_Authenticate</div>
       </div>
-      <div class="time-cell passed">388</div>
+      <div class="time-cell passed">1</div>
     </div>
     <div>
       <div><div>
@@ -2623,7 +2603,7 @@ src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:43
         <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2652,7 +2632,7 @@ src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:43
         <span>And</span>&nbsp;<span>def basicAuthFunction =</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2686,7 +2666,7 @@ return &#39;Basic &#39; + encoded;
         <span>Given</span>&nbsp;<span>url &#39;https://demoqa.com/Account/v1&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2715,7 +2695,7 @@ return &#39;Basic &#39; + encoded;
         <span>And</span>&nbsp;<span>path &#39;GenerateToken&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2740,11 +2720,11 @@ return &#39;Basic &#39; + encoded;
       <div class="step-ref bg-step">21</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>And</span>&nbsp;<span>def username = API_ID</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">1</div>
   </div>
 
    
@@ -2753,7 +2733,17 @@ return &#39;Basic &#39; + encoded;
 
   
 
-     
+  <div class="preformatted" data-parent="2.5.0.call.1.6.0.call.1.21">09:50:35.838 src/test/java/DemoQA/DemoQA_HomePage/../DemoQA_Authenticate/DemoQA_Authenticate.feature:21
+And def username = API_ID
+js failed:
+&gt;&gt;&gt;&gt;
+01: API_ID
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;API_ID&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/DemoQA/DemoQA_HomePage/../DemoQA_Authenticate/DemoQA_Authenticate.feature:21
+</div>   
 
   
 
@@ -2769,11 +2759,11 @@ return &#39;Basic &#39; + encoded;
       <div class="step-ref bg-step">22</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>def password = API_SECRET</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2798,11 +2788,11 @@ return &#39;Basic &#39; + encoded;
       <div class="step-ref bg-step">23</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = basicAuthFunction(username, password)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2827,11 +2817,11 @@ return &#39;Basic &#39; + encoded;
       <div class="step-ref bg-step">24</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">376</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2840,30 +2830,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="2.5.0.call.1.6.0.call.1.24">16:25:43.987 request:
-1 &gt; GET https://demoqa.com/Account/v1/GenerateToken
-1 &gt; Content-Type: application/json
-1 &gt; Authorization: Basic TWF0dGhldy5TdGl0dDpAUGFzc3cwcmQ=
-1 &gt; Host: demoqa.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-16:25:44.358 response time in milliseconds: 371
-1 &lt; 200
-1 &lt; Server: nginx/1.17.10 (Ubuntu)
-1 &lt; Date: Wed, 22 Mar 2023 20:25:44 GMT
-1 &lt; Content-Type: text/html; charset=UTF-8
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; X-Powered-By: Express
-1 &lt; Cache-Control: public, max-age=0
-1 &lt; Last-Modified: Tue, 07 Feb 2023 21:37:23 GMT
-1 &lt; ETag: W/&quot;c26-1862dcfdf2f&quot;
-&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;&lt;script src=&quot;https://code.jquery.com/jquery-3.5.0.min.js&quot; integrity=&quot;sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;&lt;script src=&quot;https://code.jquery.com/ui/1.12.0/jquery-ui.min.js&quot; integrity=&quot;sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;&lt;link href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;script async&gt;async function detectAdBlock(){let e=!1;try{await fetch(new Request(&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;)).catch(t=&gt;e=!0)}catch(t){e=!1}finally{!0===e&amp;&amp;dataLayer.push({event:&quot;Ad Blocker&quot;}),console.log(&quot;AdBlock Enabled: &quot;+e)}}detectAdBlock()&lt;/script&gt;&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5889298451609146&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;&lt;title&gt;DEMOQA&lt;/title&gt;&lt;div id=&quot;fixedban&quot; style=&quot;width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999&quot;&gt;&lt;div style=&quot;text-align:center;display:block;max-width:970px;height:auto;overflow:hidden;margin:auto&quot;&gt;&lt;script async=&quot;async&quot; src=&quot;https://www.googletagservices.com/tag/js/gpt.js&quot;&gt;&lt;/script&gt;&lt;script&gt;var gptadslots=[],googletag=googletag||{cmd:[]}&lt;/script&gt;&lt;script&gt;googletag.cmd.push((function(){var e=googletag.sizeMapping().addSize([0,0],[[320,50],[300,75],[300,50]]).addSize([730,200],[[728,90],[468,60]]).addSize([975,200],[[970,90],[728,90],[960,90],[750,100],[950,90],[468,60]]).build();gptadslots.push(googletag.defineSlot(&quot;/21849154601,22343295815/Ad.Plus-Anchor&quot;,[[320,100]],&quot;adplus-anchor&quot;).setTargeting(&quot;site&quot;,[&quot;demoqa.com&quot;]).defineSizeMapping(e).addService(googletag.pubads())),googletag.enableServices()}))&lt;/script&gt;&lt;div&gt;&lt;a id=&quot;close-fixedban&quot; onclick=&#39;document.getElementById(&quot;fixedban&amp;apos&quot;).style.display=&quot;none&amp;apos&quot;&#39; style=&quot;cursor:pointer&quot;&gt;&lt;img src=&quot;https://ad.plus/adplus-advertising.svg&quot; alt=&quot;adplus-dvertising&quot; title=&quot;Ad.Plus Advertising&quot; style=&quot;vertical-align:middle&quot;/&gt;&lt;/a&gt;&lt;/div&gt;&lt;div id=&quot;adplus-anchor&quot;&gt;&lt;script&gt;googletag.cmd.push((function(){googletag.display(&quot;adplus-anchor&quot;)}))&lt;/script&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({&quot;gtm.start&quot;:(new Date).getTime(),event:&quot;gtm.js&quot;});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src=&quot;https://www.googletagmanager.com/gtm.js?id=GTM-MX8DD4S&quot;,m.parentNode.insertBefore(r,m)}(window,document,&quot;script&quot;,&quot;dataLayer&quot;)&lt;/script&gt;&lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.png&quot;&gt;&lt;link href=&quot;/main.css&quot; rel=&quot;stylesheet&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;&lt;iframe src=&quot;https://www.googletagmanager.com/ns.html?id=GTM-MX8DD4S&quot; height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;&lt;div id=&quot;app&quot;&gt;&lt;/div&gt;&lt;script src=&quot;https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit&quot; async defer=&quot;defer&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/bundle.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;
-
-</div>   
+     
 
   
 
@@ -2879,11 +2846,11 @@ return &#39;Basic &#39; + encoded;
       <div class="step-ref bg-step">25</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2908,11 +2875,11 @@ return &#39;Basic &#39; + encoded;
       <div class="step-ref bg-step">26</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def AUTHTOKEN = response.token</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2941,11 +2908,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.7">
       <div class="step-ref bg-step">7</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def authToken = myFeature.AUTHTOKEN</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2969,11 +2936,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.8">
       <div class="step-ref bg-step">8</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def DemoQAHomePageJSON = read(&#39;../DemoQA_Homepage/HomePage_JSon/DemoQA_HomePage_Object.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2997,11 +2964,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.11">
       <div class="step-ref bg-step">11</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>url &#39;https://demoqa.com/BookStore/v1&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3025,11 +2992,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.12">
       <div class="step-ref bg-step">12</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>path &#39;Books&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3053,11 +3020,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.13">
       <div class="step-ref bg-step">13</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>param isbn = &#39;9781491950296&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3081,11 +3048,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.14">
       <div class="step-ref bg-step">14</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3109,11 +3076,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.15">
       <div class="step-ref bg-step">15</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">385</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3122,28 +3089,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="2.5.0.call.1.15">16:25:44.381 request:
-1 &gt; GET https://demoqa.com/BookStore/v1/Books?isbn=9781491950296
-1 &gt; Content-Type: application/json
-1 &gt; Authorization: Bearer null
-1 &gt; Host: demoqa.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-16:25:44.760 response time in milliseconds: 378
-1 &lt; 200
-1 &lt; Server: nginx/1.17.10 (Ubuntu)
-1 &lt; Date: Wed, 22 Mar 2023 20:25:44 GMT
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 4514
-1 &lt; Connection: keep-alive
-1 &lt; X-Powered-By: Express
-1 &lt; ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;
-{&quot;books&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;,&quot;title&quot;:&quot;Git Pocket Guide&quot;,&quot;subTitle&quot;:&quot;A Working Introduction&quot;,&quot;author&quot;:&quot;Richard E. Silverman&quot;,&quot;publish_date&quot;:&quot;2020-06-04T08:48:39.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:234,&quot;description&quot;:&quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;},{&quot;isbn&quot;:&quot;9781449331818&quot;,&quot;title&quot;:&quot;Learning JavaScript Design Patterns&quot;,&quot;subTitle&quot;:&quot;A JavaScript and jQuery Developer&#39;s Guide&quot;,&quot;author&quot;:&quot;Addy Osmani&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:11:40.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;With Learning JavaScript Design Patterns, you&#39;ll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da&quot;,&quot;website&quot;:&quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot;},{&quot;isbn&quot;:&quot;9781449337711&quot;,&quot;title&quot;:&quot;Designing Evolvable Web APIs with ASP.NET&quot;,&quot;subTitle&quot;:&quot;Harnessing the Power of the Web&quot;,&quot;author&quot;:&quot;Glenn Block et al.&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:12:43.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:238,&quot;description&quot;:&quot;Design and build Web APIs for a broad range of clients—including browsers and mobile devices—that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;},{&quot;isbn&quot;:&quot;9781449365035&quot;,&quot;title&quot;:&quot;Speaking JavaScript&quot;,&quot;subTitle&quot;:&quot;An In-Depth Guide for Programmers&quot;,&quot;author&quot;:&quot;Axel Rauschmayer&quot;,&quot;publish_date&quot;:&quot;2014-02-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:460,&quot;description&quot;:&quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,&quot;website&quot;:&quot;http://speakingjs.com/&quot;},{&quot;isbn&quot;:&quot;9781491904244&quot;,&quot;title&quot;:&quot;You Don&#39;t Know JS&quot;,&quot;subTitle&quot;:&quot;ES6 &amp; Beyond&quot;,&quot;author&quot;:&quot;Kyle Simpson&quot;,&quot;publish_date&quot;:&quot;2015-12-27T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:278,&quot;description&quot;:&quot;No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \\\&quot;You Don’t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,&quot;website&quot;:&quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;},{&quot;isbn&quot;:&quot;9781491950296&quot;,&quot;title&quot;:&quot;Programming JavaScript Applications&quot;,&quot;subTitle&quot;:&quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,&quot;author&quot;:&quot;Eric Elliott&quot;,&quot;publish_date&quot;:&quot;2014-07-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O&#39;Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;Take advantage of JavaScript&#39;s power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;},{&quot;isbn&quot;:&quot;9781593275846&quot;,&quot;title&quot;:&quot;Eloquent JavaScript, Second Edition&quot;,&quot;subTitle&quot;:&quot;A Modern Introduction to Programming&quot;,&quot;author&quot;:&quot;Marijn Haverbeke&quot;,&quot;publish_date&quot;:&quot;2014-12-14T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:472,&quot;description&quot;:&quot;JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale &quot;,&quot;website&quot;:&quot;http://eloquentjavascript.net/&quot;},{&quot;isbn&quot;:&quot;9781593277574&quot;,&quot;title&quot;:&quot;Understanding ECMAScript 6&quot;,&quot;subTitle&quot;:&quot;The Definitive Guide for JavaScript Developers&quot;,&quot;author&quot;:&quot;Nicholas C. Zakas&quot;,&quot;publish_date&quot;:&quot;2016-09-03T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:352,&quot;description&quot;:&quot;ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E&quot;,&quot;website&quot;:&quot;https://leanpub.com/understandinges6/read&quot;}]}
-
-</div>   
+     
 
   
 
@@ -3158,11 +3104,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.16">
       <div class="step-ref bg-step">16</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3220,11 +3166,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.22">
       <div class="step-ref bg-step">22</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def res = karate.jsonPath(response, &quot;$.books[?(@.isbn== &#39;&quot; + DemoQAHomePageJSON.Data.ISBN + &quot;&#39;)]&quot;)[0]</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3273,11 +3219,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.26">
       <div class="step-ref bg-step">26</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print res</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3286,19 +3232,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="2.5.0.call.1.26">16:25:44.764 [print] {
-  &quot;isbn&quot;: &quot;9781491950296&quot;,
-  &quot;title&quot;: &quot;Programming JavaScript Applications&quot;,
-  &quot;subTitle&quot;: &quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,
-  &quot;author&quot;: &quot;Eric Elliott&quot;,
-  &quot;publish_date&quot;: &quot;2014-07-01T00:00:00.000Z&quot;,
-  &quot;publisher&quot;: &quot;O&#39;Reilly Media&quot;,
-  &quot;pages&quot;: 254,
-  &quot;description&quot;: &quot;Take advantage of JavaScript&#39;s power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,
-  &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;
-}
- 
-</div>   
+     
 
   
 
@@ -3313,11 +3247,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.28">
       <div class="step-ref bg-step">28</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def ISBN = res.isbn</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3341,11 +3275,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.29">
       <div class="step-ref bg-step">29</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print ISBN</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3354,8 +3288,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="2.5.0.call.1.29">16:25:44.765 [print] 9781491950296 
-</div>   
+     
 
   
 
@@ -3370,11 +3303,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.30">
       <div class="step-ref bg-step">30</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def TITLE = res.title</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3398,11 +3331,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.31">
       <div class="step-ref bg-step">31</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print TITLE</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3411,8 +3344,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="2.5.0.call.1.31">16:25:44.766 [print] Programming JavaScript Applications 
-</div>   
+     
 
   
 
@@ -3427,11 +3359,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.32">
       <div class="step-ref bg-step">32</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def SUBTITLE = res.subTitle</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3455,11 +3387,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.33">
       <div class="step-ref bg-step">33</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print SUBTITLE</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3468,8 +3400,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="2.5.0.call.1.33">16:25:44.768 [print] Robust Web Architecture with Node, HTML5, and Modern JS Libraries 
-</div>   
+     
 
   
 
@@ -3484,11 +3415,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.34">
       <div class="step-ref bg-step">34</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def AUTHOR = res.author</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3512,11 +3443,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.35">
       <div class="step-ref bg-step">35</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def PUBLISH_DATE = res.publish_data</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3540,11 +3471,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.36">
       <div class="step-ref bg-step">36</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def PUBLISHER = res.publisher</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3568,11 +3499,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.37">
       <div class="step-ref bg-step">37</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def PAGES = res.pages</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3596,11 +3527,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.38">
       <div class="step-ref bg-step">38</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def DESCRIPTION = res.description</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3624,11 +3555,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.5.0.call.1.39">
       <div class="step-ref bg-step">39</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def WEBSITE = res.website</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3664,11 +3595,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.8">
       <div class="step-ref bg-step">8</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Isbn = fromAPI.ISBN</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3692,11 +3623,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.9">
       <div class="step-ref bg-step">9</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print Api_Isbn</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3705,8 +3636,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="2.9">16:25:44.773 [print] 9781491950296 
-</div>   
+     
 
   
 
@@ -3721,11 +3651,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.10">
       <div class="step-ref bg-step">10</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Title = fromAPI.TITLE</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3749,11 +3679,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.11">
       <div class="step-ref bg-step">11</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Subtitle = fromAPI.SUBTITLE</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3777,11 +3707,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.12">
       <div class="step-ref bg-step">12</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Author = fromAPI.AUTHOR</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3805,11 +3735,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.13">
       <div class="step-ref bg-step">13</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Publish_date = fromAPI.PUBLISH_DATE</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3833,11 +3763,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.14">
       <div class="step-ref bg-step">14</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Publisher = fromAPI.PUBLISHER</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3861,11 +3791,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.15">
       <div class="step-ref bg-step">15</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Pages = fromAPI.PAGES</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3889,11 +3819,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.16">
       <div class="step-ref bg-step">16</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Description = fromAPI.DESCRIPTION</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3917,11 +3847,11 @@ return &#39;Basic &#39; + encoded;
     <div class="step-container" id="2.17">
       <div class="step-ref bg-step">17</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def Api_Website = fromAPI.WEBSITE</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3943,13 +3873,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="2.21">
-      <div class="step-ref passed">21</div>
+      <div class="step-ref skipped">21</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>driver DemoQAHomePageJSON.URL.demoqa_homePage_Login_URL</span>
       </div>
     </div>
-    <div class="time-cell passed">1411</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3958,8 +3888,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="2.21">16:25:44.778 preferred port 9222 not available, will use: 50342
-</div>   
+     
 
   
 
@@ -3972,13 +3901,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="2.22">
-      <div class="step-ref passed">22</div>
+      <div class="step-ref skipped">22</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>waitForUrl(DemoQAHomePageJSON.URL.demoqa_homePage_Login_URL)</span>
       </div>
     </div>
-    <div class="time-cell passed">616</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -4000,13 +3929,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="2.23">
-      <div class="step-ref passed">23</div>
+      <div class="step-ref skipped">23</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>driver.fullscreen()</span>
       </div>
     </div>
-    <div class="time-cell passed">26</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -4028,13 +3957,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="2.25">
-      <div class="step-ref passed">25</div>
+      <div class="step-ref skipped">25</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match text(DemoQAHomePageJSON.Locator.demoqa_bookStore_click) == &#39;Book Store Application&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3046</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -4056,13 +3985,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="2.26">
-      <div class="step-ref passed">26</div>
+      <div class="step-ref skipped">26</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>click(DemoQAHomePageJSON.Locator.demoqa_bookStore_click)</span>
       </div>
     </div>
-    <div class="time-cell passed">43</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -4091,13 +4020,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="2.29">
-      <div class="step-ref passed">29</div>
+      <div class="step-ref skipped">29</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>waitForText(DemoQAHomePageJSON.Locator.demoqa_sub_header_bookstore, &#39;Book Store&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -4126,13 +4055,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="2.31">
-      <div class="step-ref passed">31</div>
+      <div class="step-ref skipped">31</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>click(DemoQAHomePageJSON.Locator.demoqa_search)</span>
       </div>
     </div>
-    <div class="time-cell passed">3011</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -4154,13 +4083,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="2.32">
-      <div class="step-ref passed">32</div>
+      <div class="step-ref skipped">32</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>input(DemoQAHomePageJSON.Locator.demoqa_search, DemoQAHomePageJSON.Data.search2)</span>
       </div>
     </div>
-    <div class="time-cell passed">257</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -4182,13 +4111,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="2.33">
-      <div class="step-ref passed">33</div>
+      <div class="step-ref skipped">33</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>delay(1000)</span>
       </div>
     </div>
-    <div class="time-cell passed">1003</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -4217,13 +4146,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="2.35">
-      <div class="step-ref passed">35</div>
+      <div class="step-ref skipped">35</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>match text(DemoQAHomePageJSON.Locator.demoqa_search_book + DemoQAHomePageJSON.Data.search_id2 + &quot;&#39;]&quot; ) == DemoQAHomePageJSON.Data.bookName2</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -4245,13 +4174,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="2.36">
-      <div class="step-ref passed">36</div>
+      <div class="step-ref skipped">36</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>click(DemoQAHomePageJSON.Locator.demoqa_search_book_click + DemoQAHomePageJSON.Data.bookName2 + &quot;&#39;]&quot; )</span>
       </div>
     </div>
-    <div class="time-cell passed">30</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -4289,13 +4218,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="2.40">
-      <div class="step-ref passed">40</div>
+      <div class="step-ref skipped">40</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>match text(DemoQAHomePageJSON.Locator.demoqa_book_isbn_label).trim() == &#39;ISBN :&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3192</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -4317,13 +4246,13 @@ return &#39;Basic &#39; + encoded;
 
   <div class="step-row">
     <div class="step-container" id="2.41">
-      <div class="step-ref failed">41</div>
+      <div class="step-ref skipped">41</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>match text(DemoQAHomePageJSON.Locator.demoqa_book_isbn_value) == Api_Isbn</span>
       </div>
     </div>
-    <div class="time-cell failed">5</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -4332,15 +4261,7 @@ return &#39;Basic &#39; + encoded;
 
   
 
-  <div class="preformatted" data-parent="2.41">16:25:57.433 src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:41
-* match text(DemoQAHomePageJSON.Locator.demoqa_book_isbn_value) == Api_Isbn
-match failed: EQUALS
-  $ | not equal (STRING:STRING)
-  &#39;9781593277574&#39;
-  &#39;9781491950296&#39;
-
-src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:41
-</div>   
+     
 
   
 
@@ -4366,7 +4287,7 @@ src/test/java/DemoQA/DemoQA_HomePage/DemoQA_bookstore.feature:41
   
   
 
-  <div class="embed" data-parent="2.42"><img src="src.test.java.DemoQA.DemoQA_HomePage.DemoQA_bookstore_1_2_1679516757674.png"/></div>
+  
 
      
 

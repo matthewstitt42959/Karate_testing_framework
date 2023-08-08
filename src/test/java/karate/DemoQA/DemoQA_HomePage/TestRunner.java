@@ -1,4 +1,4 @@
-package DemoQA.DemoQA_HomePage;
+package karate.DemoQA.DemoQA_HomePage;
 
 import com.intuit.karate.junit5.Karate;
 
