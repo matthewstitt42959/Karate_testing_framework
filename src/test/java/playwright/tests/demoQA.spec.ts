@@ -7,17 +7,11 @@ const filePath = 'C:/Users/mstitt/IdeaProjects/Karate_testing_framework/src/test
 let fileContents = fs.readFileSync(filePath, 'utf8');
 
  const jsonData = JSON.parse(fileContents);
- console.log(jsonData);
+// console.log(jsonData);
 
 const persons= JSON.parse(JSON.stringify(require("C:/Users/mstitt/IdeaProjects/Karate_testing_framework/src/test/java/playwright/tests/DemoQA/DemoQA_HomePage/HomePage_JSon/DemoQA_HomePage_Object.json")))
+console.log(persons.demoqa_bookStore_text);
 
-persons.forEach((item, index) => {
-  test(`Some text - Iteration: ${index+1}`, async ({ page }) => {
-    await page.locator('#element').fill(persons[index].name);
-    await page.locator('#element2').fill(persons[index].lastname);
-    console.log(persons.demoqa_bookStore_text);
-  });
-})
 test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
