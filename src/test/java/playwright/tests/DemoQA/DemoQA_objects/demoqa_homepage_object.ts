@@ -2,50 +2,55 @@ import {expect, type Locator, type Page} from '@playwright/test';
 
 export class HomePage {
   readonly page: Page; 
-  demoqa_bookStore_click: Locator;
-    demoqa_bookStore_text: Locator;
-    demoqa_header_src: Locator;
-    demoqa_header_href: Locator;
-    demoqa_sub_header_bookstore: Locator;
-    demoqa_pattern_background_header: Locator;
-    demoqa_search: Locator;
-    demoqa_search_book: Locator;
-    demoqa_search_book_click: Locator;
-    demoqa_login: Locator;
-    demoqa_login_welcome: Locator;
-    demoqa_login_book_store: Locator;
-    demoqa_login_new_user_click: Locator;
-    demoqa_login_user_fname_input: Locator;
-    demoqa_login_user_lname_input: Locator;
-    demoqa_login_user_uname_input: Locator;
-    demoqa_login_password_input: Locator;
-    demoqa_login_invalid: Locator;
-    demoqa_bookStore_uname_label: Locator;
-    demoqa_bookStore_uname_text: Locator;
+  readonly demoqa_bookStore_button: Locator;
+  readonly demoqa_bookStore_text: Locator;
+  readonly demoqa_header_src: Locator;
+  readonly demoqa_header_href: Locator;
+  readonly demoqa_sub_header_bookstore: Locator;
+  readonly demoqa_pattern_background_header: Locator;
+  readonly demoqa_search: Locator;
+  readonly demoqa_search_book: Locator;
+  readonly demoqa_search_book_click: Locator;
+  readonly demoqa_login: Locator;
+  readonly demoqa_login_welcome: Locator;
+  readonly demoqa_login_book_store: Locator;
+  readonly demoqa_login_new_user_click: Locator;
+  readonly demoqa_login_user_fname_input: Locator;
+  readonly demoqa_login_user_lname_input: Locator;
+  readonly demoqa_login_user_uname_input: Locator;
+  readonly demoqa_login_password_input: Locator;
+  readonly demoqa_login_invalid: Locator;
+  readonly demoqa_bookStore_uname_label: Locator;
+  readonly demoqa_bookStore_uname_text: Locator;
 
-    demoqa_book_isbn_label: Locator;
-    demoqa_book_title_label: Locator;
-    demoqa_book_subTitle_label: Locator;
-    demoqa_book_author_label: Locator;
-    demoqa_book_publisher_label: Locator;
-    demoqa_book_total_pages_label: Locator;
-    demoqa_book_description_label: Locator;
-    demoqa_book_website_label: Locator;
+  readonly demoqa_book_isbn_label: Locator;
+  readonly demoqa_book_title_label: Locator;
+  readonly demoqa_book_subTitle_label: Locator;
+  readonly demoqa_book_author_label: Locator;
+  readonly demoqa_book_publisher_label: Locator;
+  readonly demoqa_book_total_pages_label: Locator;
+  readonly demoqa_book_description_label: Locator;
+  readonly demoqa_book_website_label: Locator;
 
-    demoqa_book_isbn_value: Locator;
-    demoqa_book_title_value : Locator;
-    demoqa_book_subTitle_value: Locator;
-    demoqa_book_author_value: Locator;
-    demoqa_book_publisher_value: Locator;
-    demoqa_book_total_pages_value: Locator;
-    demoqa_book_description_value: Locator;
-    demoqa_book_website_value: Locator;
+  readonly demoqa_book_isbn_value: Locator;
+  readonly demoqa_book_title_value : Locator;
+  readonly demoqa_book_subTitle_value: Locator;
+  readonly demoqa_book_author_value: Locator;
+  readonly demoqa_book_publisher_value: Locator;
+  readonly demoqa_book_total_pages_value: Locator;
+  readonly demoqa_book_description_value: Locator;
+  readonly demoqa_book_website_value: Locator;
 
 constructor(page: Page) {
   this.page = page;
 
-    this.demoqa_bookStore_click = page.getByText('Book Store Application');
-    this.demoqa_bookStore_text= page.getByText('Book Store Application');
+
+      this.demoqa_bookStore_button = page.getByRole('heading', { name: 'Book Store Application' })
+    
+  //this.demoqa_bookStore_button = page.locator("//h5[text()= 'Book Store Application']");
+   // this.demoqa_bookStore_text= page.getByText('Book Store Application');
+    this.demoqa_bookStore_text = page.getByLabel('Book Store Application')
+    .filter({hasText: 'Book Store Application'});
 
     this.demoqa_header_src= page.locator("//img[@src='/images/Toolsqa.jpg']");
     this.demoqa_header_href= page.locator("//a[@href='https://demoqa.com']");
@@ -87,8 +92,10 @@ constructor(page: Page) {
 
   async navigate(){
     await this.page.goto("https://demoqa.com/"); 
+    
   }
   async pageTitle(){
+    
     await expect(this.page).toHaveTitle("DEMOQA"); 
     
   }
